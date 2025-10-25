@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Atlas Fund | Syntax & Soul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'soft-beige': '#F5F5F4', // Warm Gray 50
+                        'warm-gray': '#78716C',  // Stone 600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1.5s ease-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html { scroll-padding-top: 80px; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1c1917; /* Stone 900 */
+            background-color: white;
+        }
+        /* Styling for the article content */
+        .case-study-content h3 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            margin-top: 4rem; /* mt-16 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .case-study-content p, .case-study-content li {
+            font-size: 1.25rem; /* text-xl */
+            line-height: 1.7; /* leading-relaxed */
+            color: #44403c; /* stone-700 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .case-study-content ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-left: 1.25rem; /* ml-5 */
+            margin-bottom: 2rem; /* mb-8 */
+        }
+         .case-study-content li {
+             margin-bottom: 1rem; /* mb-4 */
+         }
+        .case-study-content hr {
+            margin-top: 2rem; /* my-8 */
+            margin-bottom: 2rem;
+            border-color: #f5f5f4; /* stone-100 */
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="sticky top-0 z-20 bg-white bg-opacity-95 backdrop-blur-sm border-b border-stone-100 shadow-sm transition-shadow duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex justify-between items-center">
+            <a href="/index.html#home" class="text-xl font-bold tracking-tight text-gray-900 transition duration-200 hover:text-warm-gray">
+                Syntax & Soul
+            </a>
+            <div class="flex space-x-8 text-sm font-medium tracking-wider">
+                <a href="/index.html#home" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Home</a>
+                <a href="/index.html#about" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">About</a>
+                <a href="/index.html#portfolio" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Portfolio</a>
+                <a href="/index.html#contact" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-soft-beige px-6 lg:px-8 pt-32 pb-16 border-b border-stone-200">
+            <div class="max-w-4xl mx-auto">
+                <a href="/index.html#portfolio" class="text-sm font-medium text-warm-gray hover:text-gray-900 transition duration-200 animate-fade-in block mb-4">
+                    &larr; Back to Portfolio
+                </a>
+                <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter mb-4 animate-fade-in" style="transition-delay: 0.1s;">
+                    Atlas Fund
+                </h1>
+                <p class="text-2xl text-warm-gray max-w-3xl animate-fade-in" style="transition-delay: 0.2s;">
+                    VC Firm Identity and Tone Development
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-white py-24 lg:py-32 px-6 lg:px-8">
+            <article class="max-w-3xl mx-auto case-study-content">
+
+                <div class="animate-fade-in">
+                    <h3>The Challenge</h3>
+                    <p>
+                        Atlas Fund, a boutique venture capital firm focused on deeply technical, early-stage infrastructure, struggled to differentiate its voice in a crowded, high-stakes market. They needed to project <strong>absolute confidence</strong> and intellectual seriousness while attracting founders who valued partnership and long-term vision. Their existing communication lacked the subtle gravitas required of a tier-one fund.
+                    </p>
+                </div>
+
+                <div class="animate-fade-in">
+                    <h3>The Syntax & Soul Solution</h3>
+                    <p>
+                        We focused on defining their identity through precision, ensuring every communication was definitive and intentional:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Thesis Refinement:</strong> We worked with partners to synthesize their investment philosophy into an immutable, compelling <strong>Investment Thesis Statement</strong>, eliminating jargon and establishing intellectual leadership.
+                        </li>
+                        <li>
+                            <strong>Tone Development:</strong> The tone was formalized as <i>Measured, Forward-Looking, and Unimpeachable</i>. We created specific style guides for emails, thought leadership pieces, and partnership agreements.
+                        </li>
+                        <li>
+                            <strong>Digital Presence:</strong> We restructured and rewrote key website sections, using large, minimal typography and prose that spoke to <strong>legacy</strong> and <strong>systems</strong>, rather than fleeting market trends.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in">
+                    <h3>The Result</h3>
+                    <p>
+                        The refined identity and tone system immediately distinguished Atlas Fund in the market, attracting higher-caliber deal flow. Founders noted that the firm's communications felt "uncluttered and deeply thoughtful," reflecting the stability and strategic depth they sought in a capital partner.
+                    </p>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="bg-soft-beige py-24 lg:py-32 px-6 lg:px-8 border-t border-stone-200">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold tracking-tight mb-6 animate-fade-in">
+                    Ready to define your legacy?
+                </h2>
+                <p class="text-xl text-warm-gray mb-10 max-w-2xl mx-auto animate-fade-in" style="transition-delay: 0.1s;">
+                    Let's craft words that move, sell, and scale.
+                </p>
+                <a href="/index.html#contact" class="inline-block bg-gray-900 text-white font-medium px-8 py-4 rounded-full hover:bg-warm-gray transition duration-300 shadow-xl text-lg animate-fade-in" style="transition-delay: 0.2s;">
+                    Let's Work Together
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-soft-beige py-12 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center text-sm font-light">
+            <p>&copy; 2025 Syntax & Soul. Crafted with clarity and grace.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.animate-fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
