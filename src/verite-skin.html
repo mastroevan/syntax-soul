@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Vérité Skin | Syntax & Soul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'soft-beige': '#F5F5F4', // Warm Gray 50
+                        'warm-gray': '#78716C',  // Stone 600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1.5s ease-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html { scroll-padding-top: 80px; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1c1917; /* Stone 900 */
+            background-color: white;
+        }
+        /* Styling for the article content */
+        .case-study-content h3 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700;
+            letter-spacing: -0.025em; /* tracking-tight */
+            margin-top: 4rem; /* mt-16 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .case-study-content p, .case-study-content li {
+            font-size: 1.25rem; /* text-xl */
+            line-height: 1.7; /* leading-relaxed */
+            color: #44403c; /* stone-700 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .case-study-content ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin-left: 1.25rem; /* ml-5 */
+            margin-bottom: 2rem; /* mb-8 */
+        }
+         .case-study-content li {
+             margin-bottom: 1rem; /* mb-4 */
+         }
+        .case-study-content hr {
+            margin-top: 2rem; /* my-8 */
+            margin-bottom: 2rem;
+            border-color: #f5f5f4; /* stone-100 */
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="sticky top-0 z-20 bg-white bg-opacity-95 backdrop-blur-sm border-b border-stone-100 shadow-sm transition-shadow duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex justify-between items-center">
+            <a href="/index.html#home" class="text-xl font-bold tracking-tight text-gray-900 transition duration-200 hover:text-warm-gray">
+                Syntax & Soul
+            </a>
+            <div class="flex space-x-8 text-sm font-medium tracking-wider">
+                <a href="/index.html#home" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200 hidden sm:inline">Home</a>
+                <a href="/index.html#about" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">About</a>
+                <a href="/index.html#portfolio" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Portfolio</a>
+                <a href="/index.html#contact" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-soft-beige px-6 lg:px-8 pt-32 pb-16 border-b border-stone-200">
+            <div class="max-w-4xl mx-auto">
+                <a href="/index.html#portfolio" class="text-sm font-medium text-warm-gray hover:text-gray-900 transition duration-200 animate-fade-in block mb-4">
+                    &larr; Back to Portfolio
+                </a>
+                <h1 class="text-5xl sm:text-7xl font-bold tracking-tighter mb-4 animate-fade-in" style="transition-delay: 0.1s;">
+                    Vérité Skin
+                </h1>
+                <p class="text-2xl text-warm-gray max-w-3xl animate-fade-in" style="transition-delay: 0.2s;">
+                    Luxury Skincare Rebrand and Full Web Copy
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-white py-24 lg:py-32 px-6 lg:px-8">
+            <article class="max-w-3xl mx-auto case-study-content">
+
+                <div class="animate-fade-in">
+                    <h3>The Challenge</h3>
+                    <p>
+                        Vérité Skin sought to move beyond clinical efficacy and establish itself in the <strong>ultra-premium, emotionally resonant segment</strong> of luxury skincare. Their existing copy felt dry, prioritizing ingredients over the <strong>experience</strong> of beauty. They required a complete textual ecosystem that could communicate purity, heritage, and transformative results through poetic, yet assertive, language.
+                    </p>
+                </div>
+
+                <div class="animate-fade-in">
+                    <h3>The Syntax & Soul Solution</h3>
+                    <p>
+                        We treated their product line as a form of architecture, crafting a textual environment designed for sensory engagement:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Emotional Mapping:</strong> We identified the deep emotional drivers of their target clientele (assurance, timelessness, ritual) and mapped the product benefits directly to these desires.
+                        </li>
+                        <li>
+                            <strong>Divine Copy:</strong> Our copywriters created web copy that spoke of "skin's inherent luminosity" and "the geometry of ritual," avoiding typical industry superlatives. The language was deliberately <strong>minimal</strong> and rich with implied value.
+                        </li>
+                        <li>
+                            <strong>Product Naming and Descriptions:</strong> Every title and description was refined to convey the feeling of the result, not just the function of the ingredient, making the purchase a step into a lifestyle.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="animate-fade-in">
+                    <h3>The Result</h3>
+                    <p>
+                        The rebrand launch saw a <strong>28% increase in average order value (AOV)</strong> within the first quarter. Customer feedback highlighted the "elevated and calming" experience of the website, proving that luxury copy is a primary driver of perceived product quality.
+                    </p>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="bg-soft-beige py-24 lg:py-32 px-6 lg:px-8 border-t border-stone-200">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold tracking-tight mb-6 animate-fade-in">
+                    Ready to elevate your brand?
+                </h2>
+                <p class="text-xl text-warm-gray mb-10 max-w-2xl mx-auto animate-fade-in" style="transition-delay: 0.1s;">
+                    Let's craft words that move, sell, and scale.
+                </p>
+                <a href="/index.html#contact" class="inline-block bg-gray-900 text-white font-medium px-8 py-4 rounded-full hover:bg-warm-gray transition duration-300 shadow-xl text-lg animate-fade-in" style="transition-delay: 0.2s;">
+                    Let's Work Together
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-soft-beige py-12 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center text-sm font-light">
+            <p>&copy; 2025 Syntax & Soul. Crafted with clarity and grace.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.animate-fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
