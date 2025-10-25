@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax & Soul | Where Language Meets Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'soft-beige': '#F5F5F4', // Warm Gray 50
+                        'warm-gray': '#78716C',  // Stone 600
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base styles for the elegant scroll-based fade-in effect */
+        .animate-fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1.5s ease-out, transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth cubic-bezier for elegance */
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Subtle hover effect for portfolio cards */
+        .portfolio-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transform: translateY(-4px);
+        }
+
+        /* Adjust scroll-padding for sticky header */
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        /* Global font setting */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1c1917; /* Stone 900 for deep black text */
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="sticky top-0 z-20 bg-white bg-opacity-95 backdrop-blur-sm border-b border-stone-100 shadow-sm transition-shadow duration-300">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold tracking-tight text-gray-900 transition duration-200 hover:text-warm-gray">
+                Syntax & Soul
+            </a>
+            <div class="flex space-x-8 text-sm font-medium tracking-wider">
+                <a href="#home" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200 hidden sm:inline">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">About</a>
+                <a href="#portfolio" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Portfolio</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-warm-gray transition duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-[90vh] flex items-center bg-soft-beige px-6 lg:px-8 pt-24 pb-16">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-8 leading-tight animate-fade-in">
+                    Where Language Meets Intelligence.
+                </h1>
+                <p class="text-xl sm:text-2xl text-warm-gray max-w-3xl mx-auto mb-12 animate-fade-in" style="transition-delay: 0.2s;">
+                    An AI-powered copywriting studio blending machine precision with human emotion.
+                </p>
+                <a href="#contact" class="inline-block bg-gray-900 text-white font-medium px-8 py-4 rounded-full hover:bg-warm-gray transition duration-300 shadow-xl text-lg animate-fade-in" style="transition-delay: 0.4s;">
+                    Work With Us
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-32 lg:py-48 px-6 lg:px-8 bg-white border-t border-stone-100">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-sm font-medium text-warm-gray uppercase tracking-widest mb-4 animate-fade-in">Our Philosophy</p>
+                <h2 class="text-5xl sm:text-6xl font-bold tracking-tight mb-12 animate-fade-in" style="transition-delay: 0.1s;">
+                    The Soul Behind the Syntax.
+                </h2>
+                <div class="grid md:grid-cols-2 gap-10 text-xl leading-relaxed">
+                    <p class="animate-fade-in" style="transition-delay: 0.2s;">
+                        Syntax & Soul helps visionary founders craft language that sounds as premium as their ideas. We fuse cutting-edge generative AI with the nuanced understanding of world-class copywriters.
+                    </p>
+                    <p class="animate-fade-in" style="transition-delay: 0.3s;">
+                        We turn words into systems—voices that sell, stories that scale, and copy that feels divine. Our process delivers clarity, velocity, and an unmatched emotional resonance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-32 lg:py-48 px-6 lg:px-8 bg-soft-beige">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-5xl sm:text-6xl font-bold tracking-tight mb-20 text-center animate-fade-in">
+                    Selected Work.
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-10">
+
+                    <div class="portfolio-card bg-white p-8 rounded-xl shadow-lg transition duration-500 transform hover:shadow-2xl animate-fade-in">
+                        <span class="text-sm font-medium text-warm-gray uppercase tracking-wider mb-2 block">Brand Identity</span>
+                        <h3 class="text-3xl font-semibold mb-4 text-gray-900">Luna Labs</h3>
+                        <p class="text-gray-600">AI startup launch campaign and voice system. Defined the brand’s foundational narrative for their Series A pitch and market entry.</p>
+                        <a href="/luna-labs.html" class="mt-6 inline-block text-warm-gray hover:text-gray-900 text-sm font-medium transition duration-200">View Case Study &rarr;</a>
+                    </div>
+
+                    <div class="portfolio-card bg-white p-8 rounded-xl shadow-lg transition duration-500 transform hover:shadow-2xl animate-fade-in" style="transition-delay: 0.2s;">
+                        <span class="text-sm font-medium text-warm-gray uppercase tracking-wider mb-2 block">E-commerce & Web</span>
+                        <h3 class="text-3xl font-semibold mb-4 text-gray-900">Vérité Skin</h3>
+                        <p class="text-gray-600">Luxury skincare rebrand and full web copy. Engineered a tone that balanced scientific rigor with elevated, aspirational desire.</p>
+                        <a href="/verite-skin.html" class="mt-6 inline-block text-warm-gray hover:text-gray-900 text-sm font-medium transition duration-200">View Case Study &rarr;</a>
+                    </div>
+
+                    <div class="portfolio-card bg-white p-8 rounded-xl shadow-lg transition duration-500 transform hover:shadow-2xl animate-fade-in" style="transition-delay: 0.4s;">
+                        <span class="text-sm font-medium text-warm-gray uppercase tracking-wider mb-2 block">Finance & Strategy</span>
+                        <h3 class="text-3xl font-semibold mb-4 text-gray-900">Atlas Fund</h3>
+                        <p class="text-gray-600">VC firm identity and tone development. Created compelling, precise language for investment theses and partner communications.</p>
+                        <a href="/atlas-fund.html" class="mt-6 inline-block text-warm-gray hover:text-gray-900 text-sm font-medium transition duration-200">View Case Study &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-32 lg:py-48 px-6 lg:px-8 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6 text-center animate-fade-in">
+                    Let’s Work Together.
+                </h2>
+                <p class="text-xl text-warm-gray mb-12 text-center max-w-2xl mx-auto animate-fade-in" style="transition-delay: 0.1s;">
+                    Whether you’re launching a brand or refining your voice — we craft words that move.
+                </p>
+
+                <form id="contact-form" class="max-w-xl mx-auto space-y-6 animate-fade-in" style="transition-delay: 0.3s;">
+                    <div class="relative">
+                        <label for="name" class="block text-sm font-medium text-gray-700 sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required
+                               class="w-full px-5 py-3 border border-stone-200 rounded-lg focus:ring-gray-900 focus:border-gray-900 placeholder-warm-gray text-lg transition duration-200 bg-soft-beige">
+                    </div>
+                    <div class="relative">
+                        <label for="email" class="block text-sm font-medium text-gray-700 sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required
+                               class="w-full px-5 py-3 border border-stone-200 rounded-lg focus:ring-gray-900 focus:border-gray-900 placeholder-warm-gray text-lg transition duration-200 bg-soft-beige">
+                    </div>
+                    <div class="relative">
+                        <label for="message" class="block text-sm font-medium text-gray-700 sr-only">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required
+                                  class="w-full px-5 py-3 border border-stone-200 rounded-lg focus:ring-gray-900 focus:border-gray-900 placeholder-warm-gray text-lg transition duration-200 bg-soft-beige"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full bg-gray-900 text-white font-medium px-8 py-4 rounded-lg hover:bg-warm-gray transition duration-300 shadow-xl text-lg">
+                        Send Message
+                    </button>
+                    <p id="confirmation-message" class="text-center text-green-600 font-semibold mt-4 hidden">Message sent — talk soon.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-soft-beige py-12 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center text-sm font-light">
+            <p>&copy; 2025 Syntax & Soul. Crafted with clarity and grace.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Intersection Observer for Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            // Apply observer to all elements tagged for animation
+            document.querySelectorAll('.animate-fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Ensure hero elements are observed immediately
+            // (Only on home page)
+            if (document.querySelector('#home h1')) {
+                document.querySelector('#home h1').classList.add('is-visible');
+                document.querySelector('#home p').classList.add('is-visible');
+                document.querySelector('#home a').classList.add('is-visible');
+            }
+
+
+            // 2. Contact Form Submission (UI Confirmation)
+            // (Only on home page)
+            const form = document.getElementById('contact-form');
+            if(form) {
+                const confirmation = document.getElementById('confirmation-message');
+
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Simple simulated submission delay
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    submitButton.textContent = 'Sending...';
+                    submitButton.disabled = true;
+
+                    setTimeout(() => {
+                        // Reset form and show confirmation
+                        form.reset();
+                        confirmation.classList.remove('hidden');
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+
+                        // Hide confirmation after 5 seconds
+                        setTimeout(() => {
+                            confirmation.classList.add('hidden');
+                        }, 5000);
+
+                    }, 800);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
